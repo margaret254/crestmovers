@@ -4,14 +4,14 @@
 
     <div id="home" class="banner-area section-padding">
         <div class="bg-overlay black"></div>
-        <div class="container">
+        <div class="container"></a>
             <div class="row">
                 <div class="col-md-12">
                     <div class="welcome-text">
                         <div class="name-area wow fadeInDown" data-wow-delay="0.2s">CrestMovers Company</div>
                         <h1 class="wow fadeInDown" data-wow-delay="0.4s">We are known for <br><span class="txt-type" data-wait="3000" data-words='["Excellent Services", "Always on Time(24/7) Services", "Safe,Secure and Faster Movement"]'></span></h1>
                         <a href="#about" class="my-btn-1 wow fadeInDown" data-wow-delay="0.6s">About Us</a>
-                        <a href="#contact" class="my-btn-2 wow fadeInDown" data-wow-delay="0.8s">Contact Us</a>
+                        <a href="#portfolio" class="my-btn-2 wow fadeInDown" data-wow-delay="0.8s">Our Services</a>
                     </div>
                 </div>
             </div>
@@ -20,15 +20,22 @@
 
     {#    About section#}
 
-    <!-- <div id="about" class="about-area section-padding">
+    <div id="about" class="about-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sn-8 col-xs-12 wow fadeInLeft" data-wow-delay="0.2s">
                     <div class="about-left">
-                        <h2 class="section-title">About Me</h2>
-                        <div class="line"></div>
-                        <h4>{{ about.short_description }}</h4>
+                        <h4>{{ about.title}}</h4>
                         <p>{{ about.description }}</p>
+                        <p>{{about.values}}</p>
+                        <h4> How We Work:</h4>
+                        <p>1. The client visits our website, requests a quote or sends an email to us.<br>
+                        2. After we receive your quote, We plan on a meeting day to visit the place.<br>
+                    3. Both parties sign a conscent form.<br>
+                4. We arrive at your place on the said date, pack and load your items.<br>
+            5. We move your items to the new location,unload and set it up according to your wish.
+        <br>6. The client completes payment.</p>
+        <!-- <h4> Thankyou for hiring us. You can now refer us to your friends and relatives.</h4> -->
                     </div>
                 </div>
                 <div class="col-md-4 visible-md visible-lg wow fadeInDown" data-wow-delay="0.6s">
@@ -38,7 +45,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     {#    Services Section#}
     <!-- <div id="services" class="section-padding">
@@ -59,62 +66,48 @@
                                 <img src="{{ service.image.url }}" alt="work image">
                             
                             <h2>{{ service.name }}</h2> -->
-                            <!-- <p>{{ service.description }}</p> -->
-                        <!-- </div>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-
-    <hr>
-    {#    Recent Works Section#}
-    <div id="portfolio" class="portfolio-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header">
-                        <h2>My Recent Works</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                {% for work in works %}
-                    <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
-                        <div class="gallery-items">
-                            <a class="view img" href="{{ work.image.url }}">
-                                <img src="{{ work.image.url }}" alt="work image">
-                            </a>
-                            <h2>{{ work.title }}</h2>
-                            <p>{{ work.short_description }}</p>
-                            
-                            
+                            <!-- <p>{{ service.description }}</p>
                         </div>
                     </div>
                 {% endfor %}
             </div>
         </div>
+    </div> --> 
+
+    
+    {#    Recent Works Section#}
+<div id="portfolio" class="portfolio-area section-padding">
+    <div class="container">
+        <div class="row">
+                <h4 class="text-center"> Our Services</h4> 
+        {% for work in works %}     
+            <div class="col-md-4">      
+                    
+                <div class="card " style="width: 20rem;">
+                    <img class="card-img-top work-img" src="{{ work.image.url }}" alt="work image">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ work.title }}</h5>
+                      <!-- <p class="card-text">{{ work.short_description }}</p> -->
+                      <a href="#" class="btn btn-primary text-center">See more</a>
+                    </div>
+                  </div>
+            </div>
+        {% endfor %}
+        
+       </div>
     </div>
+</div>
+
 
     {#    Contact section#}
-
-    <div class="invitation-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="single-invite text-center">
-                    <h2>Do you have any project need to be done?</h2>
-                    <p> And you looking for an experienced full-stack developer to build your web application?</p>
-                    <a href="#contact" class="my-btn-3">Contact Me Below</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div id="contact" class="contact-area section-padding">
         <div class="container">
                 
               
              <div class="row">
+                 <h3 class="text-center"> Wanna Reach to Us or Leave a comment or complaint.<br>
+                Please fill the form below.</h3>
                 <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 box-contact-form">
 
                     <form id="contact-form" method="post" action="#">
@@ -162,6 +155,6 @@
 
             </div>
         </div>
-    </div> -->
+    </div>
 
 {% endblock %}

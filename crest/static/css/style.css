@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Merienda|Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds|Yeon+Sung&display=swap');
 
 body {
     width: 100%;
     height: 100%;
     line-height: 24px;
-    /* font-size: 13px; */
-    /* font-family: 'Poppins', sans-serif; */
-    /* font-weight: normal; */
     letter-spacing: 1px;
-    font-family: 'Trade Winds';
-    /* font-family: 'Raleway', sans-serif; */
-    height: 100vh;
     background: #3d6647;
-    /* color: #ccc; */
-    overflow:hidden;
+    
 }
 /* .container {
     display: flex;
@@ -31,6 +28,7 @@ body {
   h1 {
     font-size: 3.5rem;
     color: yellowgreen;
+    font-family: 'Trade Winds';
   }
   
   h2 {
@@ -121,23 +119,14 @@ a:visited {
     text-decoration: none;
 }
 
-p {
+/* p {
     line-height: 26px;
     font-size: 14px;
     font-weight: 400;
     color: #666;
-}
-
-/* img {
-    height: 300px;
-    max-width: 350px;
-    border: none;
-    outline: none;
-    transition: all 0.2s ease 0s;
-    -moz-transition: all 0.2s ease 0s;
-    -webkit-transition: all 0.2s ease 0s;
-    -o-transition: all 0.2s ease 0s;
 } */
+
+
 
 
 
@@ -148,37 +137,11 @@ li {
     padding: 0;
 }
 
-/* h1, */
-/* h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #333333;
-    text-transform: uppercase;
-} */
 
 .section-padding {
     padding: 90px 0;
 }
 
-/* .bg-overlay {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-}
-
-.bg-overlay.black {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.9);
-} */
 
 .section-header {
     margin-bottom: 100px;
@@ -246,7 +209,7 @@ h6 {
 
 .loader:before, .loader:after {
     content: '';
-    border: 1em solid #FF0000;
+    border: 1em solid rgb(9, 75, 42);
     border-radius: 50%;
     width: inherit;
     height: inherit;
@@ -286,9 +249,11 @@ h6 {
 .navbar-custom .navbar-brand {
     font-weight: 700;
     font-size: 35px;
+    font-family: 'Kaushan Script';
+    color: yellow;
 }
 .navbar-custom .navbar-brand span{
-    color: #FF0000;
+    color: yellow;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -307,9 +272,10 @@ h6 {
 }
 
 .navbar-custom a {
-    color: #fff;
-    font-size: 13px;
+    color: yellow;
+    font-size: 20px;
     letter-spacing: 3px;
+    font-family: 'Philosopher';
 }
 
 .navbar-custom .nav li a {
@@ -352,10 +318,10 @@ h6 {
     }
     .navbar-custom.top-nav-collapse .nav li a {
         color: #fff;
-    }
+        
     .navbar-custom.top-nav-collapse .nav li.active a {
         background-color: transparent;
-        color: #FF0000 !important;
+        color: rgb(16, 100, 9) !important;
     }
     .navbar-custom.top-nav-collapse .navbar-brand {
         color: #fff;
@@ -380,6 +346,7 @@ h6 {
     color: yellow;
     font-size: 60px;
     padding-top: 250px;
+    font-family: 'Trade Winds';
 }
 
 .welcome-text h1 {
@@ -387,6 +354,7 @@ h6 {
     color: yellow;
     line-height: 50px;
     margin: 30px 0px;
+    font-family: 'Trade Winds';
 }
 
 .welcome-text .name-area {
@@ -395,6 +363,7 @@ h6 {
     text-transform: uppercase;
     line-height: 36px;
     font-weight: 400;
+    font-family: 'Trade Winds';
 }
 
 .welcome-text a {
@@ -416,35 +385,42 @@ h6 {
 
 /*--- 5. About area css starts ---*/
 
-.line {
+/* .line {
     height: 2px;
     background: #FF0000;
     width: 200px;
-}
+} */
 
-.about-left h2 {
+/* .about-left h2 {
     font-size: 27px;
     line-height: 37px;
     margin-bottom: 20px;
     padding-top: 10px;
     font-weight: 600;
     color: #333333;
-}
+} */
 
 .about-left h4 {
     text-transform: capitalize;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 35px;
     line-height: 34px;
     margin: 20px 0 30px;
     /width: 80%;
+    color:green;
+    font-family: 'Trade Winds';
+}
+.about-left p{
+    color: black;
+    font-size: 20px;
+    font-family: 'Merienda';
 }
 .about-left a {
     display: inline-block;
     color: #fff;
     padding: 10px 20px;
     text-transform: uppercase;
-    background: #FF0000;
+    background: #c8ff00;
     margin-top: 20px;
     /width: 160px;
     border-radius: 30px;
@@ -528,7 +504,28 @@ h6 {
     height: 350px;
 }
 
-
+.about-area{
+    background: #e5e7de;
+    padding-top:30px;
+}
+.portfolio-area{
+    background: #e5e7de;
+}
+.portfolio-area h4 {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 34px;
+    margin: 20px 0 30px;
+    /width: 80%;
+    color:green;
+    font-family: 'Trade Winds';
+}
+.portfolio-area h5{
+    font-family: 'Yeon Sung';
+    font-size: 30px;
+    color: green;
+}
 .gallery-items:hover .gallery-text {
     opacity: 1;
     -webkit-transition: .9s;
@@ -591,13 +588,15 @@ h6 {
 /*---8. Testimonial area css starts---*/
 
 
-.client-img {
-    width: 100px;
-    height: 100px;
+.work-img {
+    width: 350px;
+    height: 350px;
     overflow: hidden;
-    border-radius: 50%;
     display: inline-block;
+    
 }
+
+
 
 #testimonial-carousel .item {
     text-align: center;
@@ -689,7 +688,16 @@ h6 {
     border-radius: 0;
     margin-bottom: 30px;
 }
-
+.contact-area{
+    padding-top:30px;
+    background: rgb(173, 189, 138);
+    /* height: 100%; */
+    /* background: #222 url("https://w0.pngwave.com/png/694/202/mover-ortonville-relocation-business-office-move-s-png-clip-art.png") no-repeat fixed 100% 100% / cover; */
+    /* padding: 0;
+    position: relative;
+    max-height: 600px;
+    overflow: hidden; */
+}
 .contact-area textarea.form-control{
     border:2px solid #a2a2a2;
     padding: 6px;
@@ -698,7 +706,7 @@ h6 {
 }
 
 .btn.btn-send {
-    background: #FF0000;
+    background: green;
     color: #ffffff;
     border-radius: 25px;
     padding: 15px 20px;

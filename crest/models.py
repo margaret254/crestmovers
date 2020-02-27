@@ -3,6 +3,7 @@ from django.db import models
 # About Model
 
 class About(models.Model):
+    title = models.CharField(max_length=100, verbose_name="about title")
     description = models.TextField()
     values = models.TextField()
     image = models.ImageField(upload_to="about")
